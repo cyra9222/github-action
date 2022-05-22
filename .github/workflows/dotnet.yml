@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore ./03-app-dotnet/app-dotnet.csproj
+      run: dotnet restore /home/runner/work/github-action/github-action/03-app-dotnet/app-dotnet.csproj
     - name: Build
-      run: dotnet build --no-restore ./03-app-dotnet/app-dotnet.csproj
+      run: dotnet build --no-restore /home/runner/work/github-action/github-action/03-app-dotnet/app-dotnet.csproj]
     - name: Test
-      run: dotnet test --no-build --verbosity normal ./03-app-dotnet/app-dotnet.csproj
+      run: dotnet test --no-build --verbosity normal /home/runner/work/github-action/github-action/03-app-dotnet/app-dotnet.csproj]
